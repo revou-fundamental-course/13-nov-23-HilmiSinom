@@ -1,0 +1,92 @@
+* {
+  color: white;
+}
+
+body {
+  background-color: #214171;
+}
+
+/*MARK HEADER*/
+.navigation-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: min-content;
+}
+
+.navigation {
+  display: flex;
+  gap: 10px;
+}
+.title-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.navigation-header a {
+  text-decoration: none;
+  font-family: "Ubuntu", sans-serif;
+}
+
+/* MARK MAIN */
+
+#main-section {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.review-section {
+  flex-basis: 60%;
+  flex-grow: 0;
+}
+
+.review-section img {
+  max-width: 100%;
+  max-height: 90%;
+  border-radius: 4px;
+  border: 6px solid white;
+}
+
+.message-us {
+  flex-basis: 40%;
+  flex-grow: 0;
+  background-color: #174a95;
+  border: 4px solid black;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.input-message-us {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  align-items: center;
+  border: none;
+  border-radius: 6px;
+  margin-left: 8%;
+  margin-top: 10px;
+  height: 20px;
+  width: 10rem;
+  color: white;
+  background-color: #164b9b;
+  text-align: center;
+  justify-content: center;
+}
+
+#name-input {
+  background-color: white;
+  border: 2px solid #1e3962;
+  border-radius: 8px;
+}
+
+#email-input {
+  background-color: white;
+  border: 2px solid #1e3962;
+  border-radius: 8px;
+}
