@@ -9,6 +9,7 @@ body {
 }
 
 /*MARK HEADER*/
+
 .navigation-header {
   display: flex;
   justify-content: space-between;
@@ -38,8 +39,6 @@ body {
   font-family: "Ubuntu", sans-serif;
   color: white;
 }
-
-/* MARK MAIN */
 
 #main-section {
   display: flex;
@@ -104,4 +103,90 @@ button {
   max-width: 75%;
   max-height: 40%;
   border-radius: 4px;
+}
+
+/* Ukuran HP */
+@media only screen and (max-width: 576px) {
+  .navigation-header {
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .navigation {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .review-section h5 {
+    text-align: center;
+  }
+
+  #main-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .review-section,
+  .message-us {
+    flex-basis: 100%;
+  }
+
+  .review-section img {
+    max-width: 95%;
+    max-height: 80%;
+    margin-left: 7px;
+  }
+}
+
+/* Ukuran Tablet */
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .navigation-header {
+    flex-direction: row;
+    align-items: stretch;
+  }
+  
+  .review-section h5 {
+    text-align: center;
+  }
+
+  .navigation {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  #main-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .review-section,
+  .message-us {
+    flex-basis: 100%;
+  }
+}
+
+/* Ukuran PC */
+@media only screen and (min-width: 769px) {
+  .navigation-header {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .navigation {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  #main-section {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .review-section {
+    flex-basis: 60%;
+  }
+
+  .message-us {
+    flex-basis: 40%;
+  }
 }
